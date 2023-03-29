@@ -1,0 +1,21 @@
+.col-9 img{
+    object-fit: fill;
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.col-3 img{
+    object-fit: cover;
+    height: 100px;
+}
+
+.my_position_top{
+    top: 3%;
+    right: 10%;
+}
+
+.my_position_bottom{
+    bottom: 3%;
+    right: 10%;
+}
