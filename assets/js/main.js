@@ -88,7 +88,7 @@ createApp({
         imageChange() {
             this.intervalId = setInterval(this.next, 1000)
         },
-        IntervalDioMerda() {
+        Interval() {
             clearInterval(this.intervalId)
             console.log('porcoddue');
         },
