@@ -84,12 +84,16 @@ createApp({
         clickImage(index) {
             this.activeImage = index
         },
-        interval() {
-            setInterval(this.next, 2000)
-        }
+        imageChange() {
+            setInterval(this.next, 1000)
+        },
+        clearInterval() {
+            clearInterval(this.imageChange)
+            console.log('porcoddue');
+        },
     },
     mounted() {
-        this.interval();
-      }
+        this.imageChange();
+    },
 
 }).mount('#app')
