@@ -15,7 +15,7 @@ createApp({
     data() {
         return {
             activeImage: 0,
-            images: {
+            /* images: {
                 title: [
                     'spiderman',
                     'Ratchet & Clank',
@@ -36,20 +36,48 @@ createApp({
                     './assets/img/03.webp',
                     './assets/img/04.webp',
                     './assets/img/05.webp',
-                ]
-            }
+                ],
+
+            } */
+            images: [
+                {
+                    imagePath: './assets/img/01.webp',
+                    title: 'Marvel\'s Spiderman Miles Morale',
+                    description: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
+                },
+                {
+                    imagePath: './assets/img/02.webp',
+                    title: 'Ratchet & Clank: Rift Apart',
+                    description: 'Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.',
+                },
+                {
+                    imagePath: './assets/img/03.webp',
+                    title: 'Fortnite',
+                    description: "Grab all of your friends and drop into Epic Games Fortnite, a massive 100 - player face - off that combines looting, crafting, shootouts and chaos.",
+                },
+                {
+                    imagePath: './assets/img/04.webp',
+                    title: 'Stray',
+                    description: 'Lost, injured and alone, a stray cat must untangle an ancient mystery to escape a long-forgotten city',
+                },
+                {
+                    imagePath: './assets/img/05.webp',
+                    title: "Marvel's Avengers",
+                    description: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
+                },
+            ],
         }
     },
     methods: {
         prev() {
             this.activeImage--
             if (this.activeImage < 0) {
-                this.activeImage = this.images.imagePath.length - 1
+                this.activeImage = this.images.length - 1
             }
         },
         next() {
             this.activeImage++
-            if (this.activeImage === this.images.imagePath.length) {
+            if (this.activeImage === this.images.length) {
                 this.activeImage = 0
             }
         },
@@ -57,5 +85,5 @@ createApp({
             this.activeImage = index
         },
     },
-    
+
 }).mount('#app')

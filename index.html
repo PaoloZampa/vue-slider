@@ -24,13 +24,13 @@
             <div class="card border-0 my-5">
                 <div class="row my_shadow">
                     <div class="col-9 p-0">
-                        <img class="img-fluid" :src="images.imagePath[activeImage]" alt="">
-                        <h2 class="position-absolute title_position text-uppercase">{{images.title[activeImage]}}</h2>
-                        <p class="position-absolute p_position">{{images.description[activeImage]}}</p>
+                        <img class="img-fluid" :src="images[activeImage].imagePath" alt="">
+                        <h2 class="position-absolute title_position text-uppercase">{{images[activeImage].title}}</h2>
+                        <p class="position-absolute p_position">{{images[activeImage].description}}</p>
                     </div>
                     <div class="col-3 p-0 d-flex flex-column">
-                        <img class="img-fluid" :class="index === activeImage ? 'active' : ''" :src="image" alt=""
-                            v-for="(image, index) in images.imagePath" @click="clickImage(index)">
+                        <img class="img-fluid" :class="index === activeImage ? 'active' : ''" :src="image.imagePath" alt=""
+                            v-for="(image, index) in images" @click="clickImage(index)">
                         <!-- <img class="img-fluid" src="./assets/img/02.webp" alt="">
                         <img class="img-fluid" src="./assets/img/03.webp" alt="">
                         <img class="img-fluid" src="./assets/img/04.webp" alt="">
