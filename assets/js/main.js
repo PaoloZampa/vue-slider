@@ -39,5 +39,19 @@ createApp({
         ]
       }
     }
+  },
+  methods: {
+    prev(){
+        this.activeImage--
+        if (this.activeImage < 0) {
+            this.activeImage = this.images.imagePath.length - 1
+        }
+    },
+    next(){
+        this.activeImage++
+        if (this.activeImage === this.images.imagePath.length) {
+            this.activeImage = 0
+        }
+    }
   }
 }).mount('#app')

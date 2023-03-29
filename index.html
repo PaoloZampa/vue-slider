@@ -32,17 +32,18 @@
                         <p class="position-absolute p_position">{{images.description[activeImage]}}</p>
                     </div>
                     <div class="col-3 p-0 d-flex flex-column">
-                        <img class="img-fluid" src="./assets/img/01.webp" alt="">
-                        <img class="img-fluid" src="./assets/img/02.webp" alt="">
+                        <img class="img-fluid" :src="image" alt=""
+                        v-for="(image, index) in images.imagePath">
+                        <!-- <img class="img-fluid" src="./assets/img/02.webp" alt="">
                         <img class="img-fluid" src="./assets/img/03.webp" alt="">
                         <img class="img-fluid" src="./assets/img/04.webp" alt="">
-                        <img class="img-fluid" src="./assets/img/05.webp" alt="">
+                        <img class="img-fluid" src="./assets/img/05.webp" alt=""> -->
                         <nav class="d-flex justify-content-between">
-                            <button class="prev btn btn-primary position-absolute my_position_top">
+                            <button class="prev btn btn-primary position-absolute my_position_top" @click="prev">
                                 X
                                 <!-- <i class="fa-regular fa-triangle"></i> -->
                             </button>
-                            <button class="next btn btn-primary position-absolute my_position_bottom">
+                            <button class="next btn btn-primary position-absolute my_position_bottom" @click="next">
                                 Y
                                 <!-- <i class="fa-regular fa-triangle fa-rotate-180"></i> -->
                             </button>
