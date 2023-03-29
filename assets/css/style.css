@@ -50,3 +50,7 @@ p {
 .active {
     border: 5px solid rgba(188, 55, 214, 0.967);
 }
+
+.mt_10 {
+    margin-top: 10rem;
+}
