@@ -53,7 +53,7 @@ createApp({
                 this.activeImage = 0
             }
         },
-        clickImage(index){
+        clickImage(index) {
             this.activeImage = index
         }
     }

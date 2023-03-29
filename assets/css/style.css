@@ -40,3 +40,13 @@ p {
     color: white;
     max-width: 600px;
 }
+
+.my_shadow {
+    -webkit-box-shadow: 14px 15px 34px 15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 15px 34px 15px rgba(0, 0, 0, 0.75);
+    box-shadow: 14px 15px 34px 15px rgba(0, 0, 0, 0.75);
+}
+
+.active {
+    border: 5px solid rgba(188, 55, 214, 0.967);
+}
