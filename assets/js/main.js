@@ -14,6 +14,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            intervalId: '',
             activeImage: 0,
             /* images: {
                 title: [
@@ -85,10 +86,10 @@ createApp({
             this.activeImage = index
         },
         imageChange() {
-            setInterval(this.next, 1000)
+            this.intervalId = setInterval(this.next, 1000)
         },
-        clearInterval() {
-            clearInterval(this.imageChange)
+        IntervalDioMerda() {
+            clearInterval(this.intervalId)
             console.log('porcoddue');
         },
     },

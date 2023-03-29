@@ -22,7 +22,7 @@
     <div id="app">
         <div class="container">
             <div class="card border-0 my-5">
-                <div class="row my_shadow" @mouseover="clearInterval()">
+                <div class="row my_shadow" @mouseover="IntervalDioMerda()" @mouseleave="imageChange()">
                     <div class="col-9 p-0">
                         <img class="img-fluid" :src="images[activeImage].imagePath" alt="">
                         <h2 class="position-absolute title_position text-uppercase">{{images[activeImage].title}}</h2>
