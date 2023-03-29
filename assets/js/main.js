@@ -52,6 +52,9 @@ createApp({
             if (this.activeImage === this.images.imagePath.length) {
                 this.activeImage = 0
             }
+        },
+        clickImage(index){
+            this.activeImage = index
         }
     }
 }).mount('#app')
