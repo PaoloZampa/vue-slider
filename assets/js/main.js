@@ -14,8 +14,30 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      myMessage: 'Hello Vueeeeee!',
-      imgLink: 'https://picsum.photos/1000/600'
+      activeImage: 0,
+      images: {
+        title: [
+            'spiderman',
+            'Ratchet & Clank',
+            'star wars',
+            'gattino carino',
+            'avengers'
+        ],
+        description: [
+            'spiderman, l uomo che tirava bava dalle mani',
+            'Ratchet & Clank due amici coglionazzi',
+            'star wars un film che non ricordo molto bene',
+            'gattino carino simile al gatto con gli stivali',
+            'avengers tanti supereroi cazzutissimi'
+        ],
+        imagePath: [
+            './assets/img/01.webp',
+            './assets/img/02.webp',
+            './assets/img/03.webp',
+            './assets/img/04.webp',
+            './assets/img/05.webp',
+        ]
+      }
     }
   }
 }).mount('#app')

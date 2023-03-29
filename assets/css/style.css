@@ -1,6 +1,7 @@
 .col-9 img{
     object-fit: fill;
     max-height: 500px;
+    min-height: 500px;
     width: 100%;
     object-fit: cover;
 }
@@ -8,6 +9,10 @@
 .col-3 img{
     object-fit: cover;
     height: 100px;
+}
+
+.col-3 img:not(.active){
+    opacity: 0.8;
 }
 
 .my_position_top{

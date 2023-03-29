@@ -27,12 +27,9 @@
             <div class="card border-0 my-5">
                 <div class="row">
                     <div class="col-9 p-0">
-                        <img class="img-fluid" src="./assets/img/01.webp" alt="">
-                        <h2 class="position-absolute title_position">SPIDERMAN</h2>
-                        <p class="position-absolute p_position">Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Molestiae, enim quo esse quas
-                            beatae blanditiis ullam dignissimos ipsum. Labore necessitatibus cupiditate, modi placeat
-                            officia ut a nihil aut eligendi nobis?</p>
+                        <img class="img-fluid" :src="images.imagePath[activeImage]" alt="">
+                        <h2 class="position-absolute title_position text-uppercase">{{images.title[activeImage]}}</h2>
+                        <p class="position-absolute p_position">{{images.description[activeImage]}}</p>
                     </div>
                     <div class="col-3 p-0 d-flex flex-column">
                         <img class="img-fluid" src="./assets/img/01.webp" alt="">
