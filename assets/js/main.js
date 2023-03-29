@@ -55,6 +55,7 @@ createApp({
         },
         clickImage(index) {
             this.activeImage = index
-        }
-    }
+        },
+    },
+    
 }).mount('#app')
