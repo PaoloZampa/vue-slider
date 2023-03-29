@@ -14,7 +14,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            intervalId: '',
+            intervalId: null,
             activeImage: 0,
             /* images: {
                 title: [
