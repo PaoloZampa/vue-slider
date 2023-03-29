@@ -19,3 +19,18 @@
     bottom: 3%;
     right: 10%;
 }
+
+.title_position{
+    top: 5%;
+    left: 2%;
+}
+
+.p_position{
+    top: 15%;
+    left: 2%;
+}
+
+h2, p{
+    color: white;
+    max-width: 600px;
+}
