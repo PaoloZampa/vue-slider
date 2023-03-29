@@ -32,8 +32,8 @@
                         <p class="position-absolute p_position">{{images.description[activeImage]}}</p>
                     </div>
                     <div class="col-3 p-0 d-flex flex-column">
-                        <img class="img-fluid" :src="image" alt=""
-                        v-for="(image, index) in images.imagePath">
+                        <img class="img-fluid" :class="index === activeImage ? 'active' : ''" :src="image" alt=""
+                            v-for="(image, index) in images.imagePath">
                         <!-- <img class="img-fluid" src="./assets/img/02.webp" alt="">
                         <img class="img-fluid" src="./assets/img/03.webp" alt="">
                         <img class="img-fluid" src="./assets/img/04.webp" alt="">

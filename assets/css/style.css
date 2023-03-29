@@ -1,4 +1,4 @@
-.col-9 img{
+.col-9 img {
     object-fit: fill;
     max-height: 500px;
     min-height: 500px;
@@ -6,36 +6,37 @@
     object-fit: cover;
 }
 
-.col-3 img{
+.col-3 img {
     object-fit: cover;
     height: 100px;
 }
 
-.col-3 img:not(.active){
-    opacity: 0.8;
+.col-3 img:not(.active) {
+    opacity: 0.3;
 }
 
-.my_position_top{
+.my_position_top {
     top: 3%;
     right: 10%;
 }
 
-.my_position_bottom{
+.my_position_bottom {
     bottom: 3%;
     right: 10%;
 }
 
-.title_position{
+.title_position {
     top: 5%;
     left: 2%;
 }
 
-.p_position{
+.p_position {
     top: 15%;
     left: 2%;
 }
 
-h2, p{
+h2,
+p {
     color: white;
     max-width: 600px;
 }
