@@ -84,6 +84,12 @@ createApp({
         clickImage(index) {
             this.activeImage = index
         },
+        interval() {
+            setInterval(this.next, 2000)
+        }
     },
+    mounted() {
+        this.interval();
+      }
 
 }).mount('#app')
